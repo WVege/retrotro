@@ -1,11 +1,10 @@
-<a href = "../">Rétrotro</a>
-
-<h1>New place</h1>
-
+<div class="justify-content-center text-center">
+  <h1>Nouveau lieu à enregistrer</h1>
+</div>
 <%= render "form", place: @place %>
 
 <br>
 
 <div>
-  <%= link_to "Back to places", places_path %>
+  <%= link_to "Retour", places_path, class:"button btn btn-primary btn-lg rounded-1 border-1 text-center m-4" %>
 </div>

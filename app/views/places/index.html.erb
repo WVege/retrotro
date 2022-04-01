@@ -1,15 +1,14 @@
-<a href = "../">Rétrotro</a>
-
 <p style="color: green"><%= notice %></p>
-
-<h1 class=orange>Places</h1>
+ 
+<div class="container justify-content-center col-4 text-center">
+  <h1>Les lieux rétro près de chez vous</h1>
+</div>
 
 <div class="container">
-  <div class="row" id="places">
+  <div class="row justify-content-center" id="places">
     <% @places.each do |place| %>
       <%= render place %>
     <% end %>
   </div>
+  <%= link_to "New place", new_place_path, class:"button btn btn-primary btn-lg rounded-1 border-1 text-center m-4" %>
 </div>
-
-<%= link_to "New place", new_place_path, class:"button" %>
