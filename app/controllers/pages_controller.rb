@@ -1,5 +1,4 @@
 class PagesController < ApplicationController
-    
-    def salut
+    def home
     end
 end

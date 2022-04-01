@@ -1,14 +1,15 @@
+<a href = "../">Rétrotro</a>
+
 <p style="color: green"><%= notice %></p>
 
-<h1>Places</h1>
+<h1 class=orange>Places</h1>
 
-<div id="places">
-  <% @places.each do |place| %>
-    <%= render place %>
-    <p>
-      <%= link_to "Show this place", place %>
-    </p>
-  <% end %>
+<div class="container">
+  <div class="row" id="places">
+    <% @places.each do |place| %>
+      <%= render place %>
+    <% end %>
+  </div>
 </div>
 
-<%= link_to "New place", new_place_path %>
+<%= link_to "New place", new_place_path, class:"button" %>

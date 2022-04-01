@@ -13,3 +13,23 @@
  *= require_tree .
  *= require_self
  */
+
+@import "bootstrap";
+
+.orange{
+    color: $orange-800;
+}
+
+.card{
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 2%;
+}
+
+.input{
+    margin: 1.5rem;
+}
+
+.button{
+    
+}
