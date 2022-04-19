@@ -1,6 +1,10 @@
-<div class="container">
-    <h1 class="m-3">Bienvenue sur Rétrotro !</h1>
-    <h2 class="m-3">Vous n'avez pas encore vu toutes les lieux rétro autour de vous ?</h2>
-    <h2 class="m-3">Découvrez les juste ici !</h2>
-    <%= link_to 'Voir tous les lieux', index_path(@index), class: "button btn btn-primary btn-lg text-center rounded-1 border-1 m-4" %>
-</div>
+<body class="img">
+    <div class="container">
+        <div class="title-card col-10 mb-50px ms-4 ms-sm-0">
+            <h1 class="m-3">Bienvenue sur Rétrotro !</h1>
+            <h2 class="m-3">Vous n'avez pas encore visité tous les lieux rétro près de chez vous ?</h2>
+            <h2 class="m-3">Découvrez les juste ici !</h2>
+        </div>
+        <%= link_to 'Voir tous les lieux', index_path(@index), class: "button btn btn-primary btn-lg text-center rounded-1 border-1 mt-5" %>
+    </div>
+</body>

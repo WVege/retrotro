@@ -1,14 +1,16 @@
-<p style="color: green"><%= notice %></p>
- 
-<div class="container justify-content-center col-4 text-center">
-  <h1>Les lieux rétro près de chez vous</h1>
-</div>
-
-<div class="container">
-  <div class="row justify-content-center" id="places">
-    <% @places.each do |place| %>
-      <%= render place %>
-    <% end %>
+<body class="img_b_n_w">
+  <p style="color: green"><%= notice %></p>
+  
+  <div class="container justify-content-center col-9 col-sm-4 text-center title-card mb-5">
+    <h1>Les lieux rétro près de chez vous</h1>
   </div>
-  <%= link_to "New place", new_place_path, class:"button btn btn-primary btn-lg rounded-1 border-1 text-center m-4" %>
-</div>
+
+  <div class="container">
+    <div class="row justify-content-center" id="places">
+      <% @places.each do |place| %>
+        <%= render place %>
+      <% end %>
+    </div>
+    <%= link_to "New place", new_place_path, class:"button btn btn-primary btn-lg rounded-1 border-1 text-center m-4" %>
+  </div>
+</body>

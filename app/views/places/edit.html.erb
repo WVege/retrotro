@@ -1,10 +1,11 @@
-<h1>Editing place</h1>
-
+<div class="container justify-content-center text-center">
+  <h1>Modifier ce lieu</h1>
+</div>
 <%= render "form", place: @place %>
 
 <br>
 
 <div>
-  <%= link_to "Show this place", @place %> |
-  <%= link_to "Back to places", places_path %>
+  <%= link_to "Retour", @place, class:"button btn btn-primary btn-md rounded-1 border-1 text-center m-4"%> |
+  <%= link_to "Back to places", places_path, class:"button btn btn-primary btn-md rounded-1 border-1 text-center m-4" %>
 </div>

@@ -1,40 +1,38 @@
-<div class="col-4 card"> 
-  <div id="<%= dom_id place %>">
-    <p>
-      <strong>Name:</strong>
-      <%= place.name %>
-    </p>
+<%= link_to place, class:"col-9 col-sm-4 card deco-none", :action => 'go' do %>
+    <div id="<%= dom_id place %>">
+      <p>
+        <strong>Name:</strong>
+        <%= place.name %>
+      </ >
 
-    <p>
-      <strong>Category:</strong>
-      <%= place.category %>
-    </p>
+      <p>
+        <strong>Category:</strong>
+        <%= place.category %>
+      </p>
 
-    <p>
-      <strong>City:</strong>
-      <%= place.city %>
-    </p>
+      <p>
+        <strong>City:</strong>
+        <%= place.city %>
+      </p>
 
-    <p>
-      <strong>Zip code:</strong>
-      <%= place.zip_code %>
-    </p>
+      <p>
+        <strong>Zip code:</strong>
+        <%= place.zip_code %>
+      </p>
 
-    <p>
-      <strong>Address:</strong>
-      <%= place.address %>
-    </p>
+      <p>
+        <strong>Address:</strong>
+        <%= place.address %>
+      </p>
 
-    <p>
-      <strong>Description:</strong>
-      <%= place.description %>
-    </p>
+      <p>
+        <strong>Description:</strong>
+        <%= place.description %>
+      </p>
 
-    <p>
-      <strong>Rarity:</strong>
-      <%= place.rarity %>
-    </p>
-    <%= link_to "Voir +", place, class:"position-absolute bottom-0 mb-2 mt-2" %>
-
-  </div>
-</div>
+      <p>
+        <strong>Rarity:</strong>
+        <%= place.rarity %>
+      </p>
+    </div>
+<% end %>

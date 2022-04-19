@@ -16,14 +16,48 @@
 
 @import "bootstrap";
 
+.header{
+    background: linear-gradient(rgb(102, 102, 102), rgba(102, 102, 102, 0.1) );
+}
+
+.img{
+    background-image: url("https://img.freepik.com/free-photo/geometric-shape-background-engraving-style_53876-128769.jpg?t=st=1649181254~exp=1649181854~hmac=772b004c634072876d6214c6880e9307d0441734837c3a57a6304af6e522a989&w=900");
+    background-repeat:no-repeat;
+    background-size:cover;
+
+    @media only screen and (max-width: 767px) and (orientation: portrait) {
+        /* smartphone en mode portait */
+        background-repeat: repeat;
+        }
+}
+
 .orange{
     color: $orange-800;
+}
+
+.title-card{
+    padding: 1em;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.65);
+    box-shadow:6px 6px rgba(102, 102, 102, 0.65);
 }
 
 .card{
     margin: 2rem;
     padding: 1rem;
     border-radius: 2%;
+    box-shadow: 6px 6px #CD6300;
+    color: black;
+}
+
+.card:hover{
+    color: black;
+    transform: translate(6px, 6px);
+    box-shadow: none;
+}
+
+.deco-none{
+    text-decoration: none;  
 }
 
 .input{
@@ -33,9 +67,57 @@
 .button{
     background-color: var(--orange);
     border-width: 2px;
-    border-color: rgb(240, 142, 142);
+    border-color: var(--border-classic);
+    box-shadow: 6px 6px #CD6300;
+}
+
+.button:hover{
+    transform: translate(6px, 6px);
+    box-shadow:none;
+    background-color: var(--orange);
+    border-color: var(--border-classic);
+}
+
+.button:focus{
+    border-color: black;
+    box-shadow: none;
+}
+
+.hard-button{
+    background-color: var(--red);
+    border-width: 2px;
+    border-color: rgb(240, 88, 88);
+    box-shadow: 6px 6px #cd2900;
+}
+
+.hard-button:hover{
+    transform: translate(6px, 6px);
+    box-shadow:none;
+    background-color: var(--red);
+    border-color: rgb(240, 88, 88);
+}
+
+.hard-button:focus{
+    border-color: black;
+    box-shadow: none;
 }
 
 .nav{
     margin-bottom: 5rem;    
+}
+
+.logo{
+   //margin: 1.5rem 1.5rem 1.5rem 4rem;
+//    margin-left: 50px;
+}
+
+.img_b_n_w{
+    background-image: url("https://i.postimg.cc/Nj2jNmrR/wood-b-n-w.jpg");
+    background-repeat:repeat;
+    background-size:cover;
+}
+
+.place{
+    //margin: 1.5rem 5rem 1.5rem 1.5rem;
+    height:50px;
 }

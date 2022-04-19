@@ -1,4 +1,4 @@
-<div class="container justify-content-center col-5">
+<div class="container justify-content-center col-sm-5 col-10">
   <%= form_with(model: place) do |form| %>
     <% if place.errors.any? %>
       <div style="color: red">
@@ -13,37 +13,37 @@
     <% end %>
 
     <div class="input">
-      <span class="input-group-text col-4 mb-2 justify-content-center" id="basic-addon1">Nom du lieu</span>
+      <span class="input-group-text col-sm-4 col-8 mb-2 justify-content-center" id="basic-addon1">Nom du lieu</span>
       <%= form.text_field :name, class:"col-12" %>
     </div>
 
     <div class="input">
-      <span class="input-group-text col-4 mb-2 justify-content-center" id="basic-addon1">Catégorie</span>
+      <span class="input-group-text col-sm-4 col-8 mb-2 justify-content-center" id="basic-addon1">Catégorie</span>
       <%= form.text_field :category, class:"col-12" %>
     </div>
 
     <div class="input">
-      <span class="input-group-text col-4 mb-2 justify-content-center" id="basic-addon1">Ville</span>
+      <span class="input-group-text col-sm-4 col-8 mb-2 justify-content-center" id="basic-addon1">Ville</span>
       <%= form.text_field :city, class:"col-12" %>
     </div>
 
     <div class="input">
-      <span class="input-group-text col-4 mb-2 justify-content-center" id="basic-addon1">Code Postal</span>
+      <span class="input-group-text col-sm-4 col-8 mb-2 justify-content-center" id="basic-addon1">Code Postal</span>
       <%= form.number_field :zip_code, class:"col-12" %>
     </div>
 
     <div class="input">
-      <span class="input-group-text col-4 mb-2 justify-content-center" id="basic-addon1">Adresse</span>
+      <span class="input-group-text col-sm-4 col-8 mb-2 justify-content-center" id="basic-addon1">Adresse</span>
       <%= form.text_field :address, class:"col-12" %>
     </div>
 
     <div class="input">
-      <span class="input-group-text col-4 mb-2 justify-content-center" id="basic-addon1">Description</span>
+      <span class="input-group-text col-sm-4 col-8 mb-2 justify-content-center" id="basic-addon1">Description</span>
       <%= form.text_field :description, class:"col-12" %>
     </div>
 
     <div class="input">
-      <span class="input-group-text col-4 mb-2 justify-content-center" id="basic-addon1">Rareté sur 5</span>
+      <span class="input-group-text col-sm-4 col-8 mb-2 justify-content-center" id="basic-addon1">Rareté sur 5</span>
       <%= form.number_field :rarity, class:"col-12" %>
     </div>
 
